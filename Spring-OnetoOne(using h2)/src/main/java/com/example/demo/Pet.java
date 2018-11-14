@@ -47,8 +47,8 @@ public class Pet   {
 
 	private String name;
 	
-	 @OneToOne( fetch = FetchType.LAZY,optional=false)
-	  @JoinColumn(name = "person_id" ,nullable=false,unique=true)
+	 @OneToOne( fetch = FetchType.LAZY)
+	  @JoinColumn(name = "person_id" )
 		private Person person;
 	
 	public Person getPerson() {
